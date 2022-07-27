@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Maghfirea';
+    src: url('maghfirea/Maghfirea.otf');
+    src: url('maghfirea/Maghfirea.otf') format('opentype'),
+         url('maghfirea/Maghfirea.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Misto';
+    src: url('Misto/Web/fonts/Misto.eot');
+    src: url('Misto/Web/fonts/Misto.eot') format('embedded-opentype'),
+         url('Misto/Web/fonts/Misto.woff2') format('woff2'),
+         url('Misto/Web/fonts/Misto.woff') format('woff'),
+         url('Misto/Web/fonts/Misto.ttf') format('truetype'),
+         url('Misto/Web/fonts/Misto.svg') format('svg');
+  }
+
+
+::-moz-selection {
+    background: #ffffcc;
+}
+
+::selection {
+    background: #3d54fe;
+    color: #F5F4F0;
+}
+
+html {
+    /* base unit for rems */
+    line-height: 1.6;
+    color: #444;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Links */
+header a {
+    color: #bcbdc0;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    transition: #3d54fe 0.5s ease-out;
+}
+
+a:hover {
+    color: #3d54fe;
+    text-decoration: none;
+}
