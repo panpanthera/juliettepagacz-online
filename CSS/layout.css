@@ -15,6 +15,7 @@ html {
   /*background-color: #F5F4F0;*/
   background-color: #1F1F1F;
   scroll-snap-type: y mandatory;
+  line-height: normal;
 }
 
 .page {
@@ -28,14 +29,68 @@ html {
 }
 
 .left {
-  width: 25%;
-  margin: 5%;
+  width: 35%;
   padding: 2%;
   height: 80%;
+  display: flex;
+  position: relative;
 }
 
+/*Creative mind? */
+.home-left-top {
+  font-family: 'DM Sans';
+  font-size: 70px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  height: 80%;
+  width: 100%;
+}
+
+.home-left-top-top {
+  display: flex;
+  width: 100%;
+  height: 25%;
+}
+
+.home-left-top-down {
+  display: flex;
+  width: 100%;
+  height: 75%;
+}
+
+/* yes! */
+.home-left-top span {
+  font-size: 85px;
+  color: #EFE7D8;
+  justify-content: flex-end;
+}
+
+/* Living in Brussels. */
+.home-left-down {
+  display: flex;
+  font-family: DM Sans;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #EFE7D8;
+  justify-content: flex-end;
+}
+
+/*#ari {
+  position: absolute;
+  width: 314.77px;
+  height: 307.33px;
+  left: 126px;
+  top: 519px;
+}*/
+
 .right {
-  width: 75%;
+  width: 65%;
   height: 80%;
   overflow: visible;
   background-color: #1f1f1f;
@@ -77,44 +132,6 @@ html {
   line-height: 86px;
   text-align: justify;
   vertical-align: top;
-}
-
-/*Creative mind? yes! */
-.home-left-top {
-  font-family: 'DM Sans';
-  font-size: 70px;
-  line-height: 130px;
-  font-weight: 400;
-  text-align: left;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  display: inline-block;
-}
-
-.home-left-top span {
-  font-size: 85px;
-  color: #EFE7D8;
-}
-
-/* Based in Brussels. */
-.home-left-down {
-  display: flex;
-  font-family: DM Sans;
-  font-size: 20px;
-  text-align: justify;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #EFE7D8;
-  justify-content: flex-end;
-}
-
-.ari {
-  position: absolute;
-  width: 314.77px;
-  height: 307.33px;
-  left: 126px;
-  top: 519px;
 }
 
 .scroller {
