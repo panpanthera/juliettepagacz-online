@@ -18,6 +18,11 @@ html {
   line-height: normal;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 .page {
   height: 100vh;
   width: 100%;
@@ -30,72 +35,92 @@ html {
 
 .left {
   width: 35%;
+  height: 100%;
   padding: 2%;
-  height: 80%;
-  display: flex;
-  position: relative;
+  text-transform: uppercase;
 }
 
 /*Creative mind? */
-.home-left-top {
+.left .top {
   font-family: 'DM Sans';
   font-size: 70px;
   font-weight: 400;
   text-align: left;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: #FFFFFF;
   display: flex;
-  height: 80%;
-  width: 100%;
+  height: 30%;
 }
 
-.home-left-top-top {
+
+.mid {
   display: flex;
-  width: 100%;
-  height: 25%;
+  height: 50%;
 }
 
-.home-left-top-down {
+.left .left-mid {
   display: flex;
-  width: 100%;
-  height: 75%;
+  width: 60%;
 }
 
 /* yes! */
-.home-left-top span {
+.left .right-mid {
+  display: flex;
+  width: 40%;
   font-size: 85px;
   color: #EFE7D8;
   justify-content: flex-end;
+  align-items: center;
 }
 
 /* Living in Brussels. */
-.home-left-down {
+.bottom {
+  height: 20%;
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   font-family: DM Sans;
   font-size: 20px;
   text-align: justify;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #EFE7D8;
-  justify-content: flex-end;
 }
-
-/*#ari {
-  position: absolute;
-  width: 314.77px;
-  height: 307.33px;
-  left: 126px;
-  top: 519px;
-}*/
 
 .right {
   width: 65%;
-  height: 80%;
-  overflow: visible;
-  background-color: #1f1f1f;
-  color: #F5F4F0;
+  height: 100%;
   padding: 2%;
+  overflow: visible;
+  color: #F5F4F0;
+
+}
+
+.right .top {
+  /* *Games. *Stories. */
+  height: 30%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 144px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'Maghfirea';
+  font-weight: 400;
+}
+
+.right .bottom {
+  /* Visual storytelling, filming, writing & building worlds. */
+  height: 74%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-family: DM Sans;
+  font-size: 46px;
+  text-transform: none;
+  letter-spacing: 0.05em;
+  color: #EFE7D8;
+  text-align: justify;
 }
 
 
@@ -105,33 +130,6 @@ html {
 
 .right_2 {
   width: 50%;
-}
-
-.home-right-top {
-  /* *Games. *Stories. */
-  font-size: 144px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-family: 'Maghfirea';
-  height: 60%;
-  display: flex;
-  justify-content: flex-start;
-  font-weight: 400;
-}
-
-.home-right-down {
-  /* Visual storytelling, filming, writing & building worlds. */
-  display: flex;
-  height: 45%;
-  font-family: DM Sans;
-  font-size: 45px;
-  letter-spacing: 0.05em;
-  color: #EFE7D8;
-  justify-content: flex-start;
-  line-height: 86px;
-  text-align: justify;
-  vertical-align: top;
 }
 
 .scroller {
@@ -146,14 +144,9 @@ html {
   font-weight: 300;
 }
 
-.title strong {
-  font-weight: 700;
-}
-
 .title span {
   display: inline-block;
   overflow: hidden;
-  line-height: 0.8;
 }
 
 .title span span {
@@ -198,6 +191,7 @@ footer,
 header {
   position: fixed;
   display: flex;
+  height: 10%;
   z-index: 999;
   background-color: transparent;
   color: #473BF0;
@@ -205,7 +199,6 @@ header {
 }
 
 header {
-  height: 15%;
   width: 100%;
   justify-content: flex-end;
   mix-blend-mode: exclusion;
