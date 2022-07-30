@@ -78,7 +78,7 @@ gsap.to("#pageThree", {
     start: 'top center',
     end: 'bottom 50%',
     toggleActions: "play reverse play reverse",
-    markers: true,
+  //  markers: true,
     scroller: "[data-scroll-container]"
   },
   duration: 0.5,

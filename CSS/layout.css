@@ -20,7 +20,6 @@ html {
 body {
   height: 100vh;
   width: 100vw;
-  padding: 2%;
 }
 
 .page {
@@ -56,24 +55,35 @@ body {
   letter-spacing: 0.1em;
   color: #FFFFFF;
   display: flex;
-  height: 35%;
+  height: 46%;
 }
 
 .mid {
   display: flex;
-  height: 55%;
+  height: 41.5%;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 130px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #EFE7D8;
 }
 
-.left .left-mid {
-  display: flex;
-  width: 60%;
-  align-items: center;
+.left-mid {
+  position: absolute;
+  top: 45%;
+  left: 6.5%;
 }
 
 /* yes! */
 .left .right-mid {
   display: flex;
-  width: 40%;
+  width: 100%;
   /* font-size: 85px;
   color: #EFE7D8;*/
   justify-content: flex-end;
@@ -91,7 +101,7 @@ body {
 
 /* Living in Brussels. */
 .bottom {
-  height: 10%;
+  height: 5%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -103,21 +113,17 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
-
-  /* identical to box height */
+  font-size: 18px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: #EFE7D8;
 }
 
 .right {
-  width: 64%;
+  width: 62.5%;
   height: 100%;
   color: #F5F4F0;
-  padding: 2%;
+  padding: 2% 2% 5% 3%;
 }
 
 .right .top {
@@ -138,6 +144,7 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
+
 }
 
 .right .bottom {
