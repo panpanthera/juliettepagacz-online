@@ -9,4 +9,5 @@ The home page should look like this on 05/08 (this design was made on 28/07/2022
 Now the homepage looks like this (29/07/22 11.31am)
 <img width="800" height="450" src="homepage_220729noon.png"></img>
 
+Now the homepage looks like this (30/07/22 11.28pm)
 <img src="homepage_220730evening.png"/>
