@@ -5,18 +5,18 @@
     font-family: 'Maghfirea';
     src: url('maghfirea/Maghfirea.otf');
     src: url('maghfirea/Maghfirea.otf') format('opentype'),
-         url('maghfirea/Maghfirea.ttf') format('truetype');
-  }
+        url('maghfirea/Maghfirea.ttf') format('truetype');
+}
 
-  @font-face {
+@font-face {
     font-family: 'Misto';
     src: url('Misto/Web/fonts/Misto.eot');
     src: url('Misto/Web/fonts/Misto.eot') format('embedded-opentype'),
-         url('Misto/Web/fonts/Misto.woff2') format('woff2'),
-         url('Misto/Web/fonts/Misto.woff') format('woff'),
-         url('Misto/Web/fonts/Misto.ttf') format('truetype'),
-         url('Misto/Web/fonts/Misto.svg') format('svg');
-  }
+        url('Misto/Web/fonts/Misto.woff2') format('woff2'),
+        url('Misto/Web/fonts/Misto.woff') format('woff'),
+        url('Misto/Web/fonts/Misto.ttf') format('truetype'),
+        url('Misto/Web/fonts/Misto.svg') format('svg');
+}
 
 
 ::-moz-selection {
@@ -42,12 +42,11 @@ header a {
 }
 
 a {
-    text-decoration: none;
-    position: relative;
+    text-decoration: underline;
+    color: #F5F4F0;
     transition: #3d54fe 0.5s ease-out;
 }
 
 a:hover {
     color: #3d54fe;
-    text-decoration: none;
 }
