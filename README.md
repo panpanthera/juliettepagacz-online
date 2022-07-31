@@ -11,3 +11,6 @@ Now the homepage looks like this (29/07/22 11.31am)
 
 Now the homepage looks like this (30/07/22 11.28pm)
 <img src="homepage_220730evening.png"/>
+
+There, that's all done! :) For the CSS and HTML... From now, I still have to build the three other pages and then I'll finally add some JS (31/07/22 12.29pm)
+<img src="homepage_310729noon.png"/>
