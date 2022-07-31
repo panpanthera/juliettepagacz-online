@@ -191,44 +191,28 @@
                 </div>
         </section>
 
-        <section data-scroll-section>
-            <div class="content">
-                <svg class="distort" width="1850" height="1250" viewBox="0 0 1850 1250">
-                    <filter id="distortionFilter">
-                        <feTurbulence type="fractalNoise" baseFrequency="0.01 0.003" numOctaves="5" seed="2"
-                            stitchTiles="noStitch" x="0%" y="0%" width="100%" height="100%" result="noise" />
-                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R"
-                            yChannelSelector="B" x="0%" y="0%" width="100%" height="100%"
-                            filterUnits="userSpaceOnUse" />
-                    </filter>
-                    <g filter="url(#distortionFilter)">
-                        <image class="distort__img" x="1200" y="200" xlink:href="images/PAGACZ_01.jpg" height="650"
-                            width="550" />
-                        <image class="distort__img" x="1200" y="200" xlink:href="images/20191229_125703.jpg"
-                            height="650" width="550" />
-                        <image class="distort__img" x="1200" y="200" xlink:href="images/20191119_111037.jpg"
-                            height="650" width="550" />
-                        <image class="distort__img" x="1200" y="200" xlink:href="images/MING_I-10.jpg" height="650"
-                            width="550" />
-                    </g>
-                </svg>
-                <nav class="menu">
-                    <a href="#" class="text1 menu__link">Travel in Beotia</a>
-                    <p class="hide1"></p>
-                    <a href="#" class="text2 menu__link">The Sun has no Shadow</a>
-                    <p class="hide2"></p>
-                    <a href="#" class="text3 menu__link">The Dazzled</a>
-                    <p class="hide3"></p>
-                    <a href="#" class="text4 menu__link">The Big Dream</a>
-                    <p class="hide4"></p>
-
-                </nav>
+        <section class="page two" id="websites" data-scroll-section data-scroll-direction="horizontal">
+            <div class="top-two">
+                <h3 class="guideline"><span>juliette pagacz /</span> <span>portfolio / </span><span>websites</span></h3>
             </div>
-
-        </section>
-
-        <section class="page two" id="gallery" data-scroll-section data-scroll-direction="horizontal">
-            <div class="wide">
+            <div class="mid-two">
+                <div class="linkCover">
+                    <img width="650px" src="./homepage_310729noon.png" />
+                    <div class="comments">
+                        <span>tools: html, css, javascript</span>
+                        <span><a href="https://github.com/panpanthera/juliettepagacz-online">Github</a></span>
+                        <span>DOB: 2022/08/05</span>
+                    </div>
+                </div>
+                <div class="linkCover">
+                    <img width="650px" src="./coming soon.svg" />
+                </div>
+                <div class="linkCover">
+                    <img width="650px" cover="" src="./homepage_310729noon.png" />
+                </div>
+            </div>
+            <div class="bottom-two">
+                <img width="1735px" src="./Arrow 2.svg">
             </div>
         </section>
 

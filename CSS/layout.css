@@ -144,19 +144,81 @@ body {
   overflow: visible;
 }
 
-
-.left_2 {
-  width: 50%;
-}
-
-.right_2 {
-  width: 50%;
-}
-
 .scroller {
   position: absolute;
   bottom: 4%;
   left: 2.3%;
+}
+
+
+/* * * * * * * * * * * * * * * * * *\
+\*  ********** PAGE TWO *********  */
+
+.two {
+  flex-direction: column;
+}
+
+.top-two {
+  padding: 2%;
+  height: 30%;
+  width: 100%;
+  justify-content: flex-start;
+
+}
+
+.guideline {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.guideline span:last-child {
+  color: #FF1500;
+}
+
+.mid-two {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bottom-two {
+  display: flex;
+  padding-left: 4.5%;
+  height: 10%;
+}
+
+.linkCover {
+  margin: 2%;
+  height: fit-content;
+}
+
+.linkCover img {
+  border: 1px solid #F5F4F0;
+}
+
+.linkCover .comments {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+
+  /* identical to box height */
+  text-align: justify;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  mix-blend-mode: normal;
 }
 
 .title {
@@ -182,27 +244,6 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.wide {
-  width: 100%;
-  color: #000500;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 50px;
-}
-
-.purple {
-  background-color: #FFFFFF;
-  background-image: none;
-}
-
-.wide h2 {
-  margin: 0 auto;
-}
-
-.wide video {
-  min-width: 100%;
-  min-height: 100%;
 }
 
 footer,
@@ -252,9 +293,7 @@ footer {
   bottom: 0%;
 }
 
-footer span {
-
-}
+footer span {}
 
 /*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
