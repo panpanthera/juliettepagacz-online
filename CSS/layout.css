@@ -230,9 +230,9 @@ body {
 
 footer,
 header {
-  position: fixed;
   display: flex;
   height: 10%;
+  width: 100%;
   z-index: 999;
   background-color: transparent;
   color: #473BF0;
@@ -240,8 +240,7 @@ header {
 }
 
 header {
-  width: 100%;
-  display: flex;
+  position: fixed;
   mix-blend-mode: exclusion;
 }
 
@@ -255,26 +254,30 @@ header a {
 }
 
 .logo {
-  left: 20%;
   width: 50%;
   justify-content: flex-start;
   padding: 1% 0 0 1%;
 }
 
-footer {
+#writeme {
   position: fixed;
-  bottom: 1.5em;
+  top: 88.6%;
+  right: 0.2%;
   color: #EFE7D8;
-  right: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 33px;
   letter-spacing: 0.05em;
   transform: rotate(-90deg);
-  margin: 0 0 1% 1%;
 }
 
+footer {
+  bottom: 0%;
+}
+
+footer span {
+
+}
 
 /*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
