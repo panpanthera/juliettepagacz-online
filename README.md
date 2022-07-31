@@ -14,3 +14,9 @@ Now the homepage looks like this (30/07/22 11.28pm)
 
 There, that's all done! :) For the CSS and HTML... From now, I still have to build the three other pages and then I'll finally add some JS (31/07/22 12.29pm)
 <img src="homepage_310729noon.png"/>
+
+Designed the second page on Figma during the afternoon (31/07/2022 5pm)
+<img src="firstPage_template_figma.png"/>
+
+And the second page is already almost done (for HTML & CSS, but JS still missing.) (31/07/2022 9.30pm)
+<img src="firstPage_31072022evening.png"/>
