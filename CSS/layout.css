@@ -183,7 +183,7 @@ body {
 }
 
 .guideline span:last-child {
-  color: #FF1500;
+  text-decoration: underline;
 }
 
 .mid-two {
