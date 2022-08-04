@@ -4,7 +4,7 @@ I have been working on my website for sometime now, but keep in mind this is sti
 Due date: 05/08/2022 (today is the 27/07/2022).
 
 The home page should look like this on 05/08 (this design was made on 28/07/2022)
-<img width="800" height="450" src="IMAGES/homepage_template_figma.png"></img>
+<img width="800" height="450" src="https://www.figma.com/file/694eJNht4CXWzV2cBMMYoi/Untitled?node-id=325%3A2"></img>
 
 Now the homepage looks like this (29/07/22 11.31am)
 <img width="800" height="450" src="IMAGES/homepage_220729noon.png"></img>
