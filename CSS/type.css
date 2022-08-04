@@ -36,9 +36,14 @@ html {
 
 /* Links */
 header a {
-    color: #bcbdc0;
-    font-weight: bolder;
-    font-size: 50px;
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
 }
 
 a {

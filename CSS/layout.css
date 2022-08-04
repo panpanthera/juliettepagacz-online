@@ -127,12 +127,18 @@ body {
   justify-content: flex-end;
   font-family: 'Maghfirea';
   font-weight: 400;
-  font-size: 144px;
-  line-height: 155px;
+  font-size: 15.2vh;
+  line-height: 15.5vh;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
 
+}
+
+.barre {
+  position: sticky;
+  border: 0.1vh solid #FFFFFF;
+  top: 42vh;
 }
 
 .right .bottom {
@@ -142,8 +148,8 @@ body {
   justify-content: flex-end;
   font-family: 'DM Sans', sans-serif;
   text-align: justify;
-  font-size: 45px;
-  line-height: 85px;
+  font-size: 4.5vh;
+  line-height: 8.5vh;
   letter-spacing: 0.05em;
   text-transform: none;
   color: #EFE7D8;
@@ -270,22 +276,21 @@ header {
 
 header {
   position: fixed;
-  mix-blend-mode: exclusion;
-}
-
-header a {
-  height: 100px;
-  width: 100px;
-  box-shadow: inset 0px 0px 30px blue;
-  border-radius: 100px;
-  right: 2%;
-  top: 20%;
 }
 
 .logo {
   width: 50%;
   justify-content: flex-start;
   padding: 1% 0 0 1%;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  width: 24%;
+  right: 0.5vw;
+  top: 4vh;
 }
 
 #writeme {
@@ -398,117 +403,3 @@ html.has-scroll-dragging {
   right: auto;
   bottom: 0;
 }
-
-
-/*Hamburger Menu*/
-
-/* Clearing –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#navigationWrap {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background: black;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  padding: 50px 0;
-  overflow: hidden;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  color: white;
-  font-size: 15vh;
-  text-transform: uppercase;
-  overflow: hidden;
-  font-weight: 700;
-}
-
-nav ul li:first-child {
-  font-size: 8vh;
-  overflow: visible;
-}
-
-nav ul li:first-child {
-  font-size: 8vw;
-}
-
-nav a {
-  color: white;
-  -o-transition: .3s;
-  -ms-transition: .3s;
-  -moz-transition: .3s;
-  -webkit-transition: .3s;
-  transition: .3s;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #F24738;
-}
-
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-  padding: 1% 1% 0 0;
-  z-index: 20;
-  cursor: pointer;
-}
-
-.close {
-  display: none;
-  opacity: 0;
-  position: fixed;
-  left: 95%;
-  right: 20px;
-  width: 100%;
-  z-index: 20;
-  cursor: pointer;
-}
-
-.social a {
-  color: #484848;
-  color: white;
-  -o-transition: .3s;
-  -ms-transition: .3s;
-  -moz-transition: .3s;
-  -webkit-transition: .3s;
-  transition: .3s;
-  text-decoration: none;
-}
-
-.social a:hover {
-  color: #F24738;
-}
-
-.fa {
-
-  font-size: 1.8em !important;
-  -o-transition: .3s;
-  -ms-transition: .3s;
-  -moz-transition: .3s;
-  -webkit-transition: .3s;
-  transition: .3s;
-  z-index: 999999;
-}
-
-/*.fa-times {
-  color: #FFFFFF;
-  z-index: 999999;
-}
-
-.fa:hover {
-  color:#F24738;
-}
-*/
