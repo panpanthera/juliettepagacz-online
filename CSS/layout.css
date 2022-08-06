@@ -16,11 +16,6 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
-}
-
 /* * * * * * * * * * * * * * * * * * *\
 \*  ********** ALL PAGES **********  */
 
@@ -163,10 +158,10 @@ body {
 }
 
 
-/* * * * * * * * * * * * * * * * * *\
-\*  ********** PAGE TWO *********  */
+/* * * * * * * * * * * * * * * * * * * * * *\
+\*  ********** PAGE TWO & THREE *********  */
 
-.two {
+.portfolio {
   flex-direction: column;
 }
 
@@ -238,6 +233,36 @@ body {
   z-index: 0;
 }
 
+.contact {
+
+  flex-direction: column;
+color: #FFFFFF;
+
+}
+
+.contact-top {
+  height: 40%;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'DM Sans', sans-serif;
+  text-align: justify;
+  font-size: 4.5vh;
+  line-height: 8.5vh;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  color: #EFE7D8;
+}
+
+.contact-bottom {
+  font-size: 3vh;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .title {
   opacity: 0;
   font-weight: 300;
@@ -270,12 +295,12 @@ header {
   width: 100%;
   z-index: 999;
   background-color: transparent;
-  color: #473BF0;
   font-size: sans-serif;
+  mix-blend-mode: exclusion;
 }
 
 header {
-  position: fixed;
+  position: fixed; 
 }
 
 .logo {
@@ -284,7 +309,7 @@ header {
   padding: 1% 0 0 1%;
 }
 
-.navbar {
+.navBar {
   display: flex;
   position: fixed;
   justify-content: space-around;
@@ -311,9 +336,20 @@ header {
 
 footer {
   bottom: 0%;
+  position: absolute;
+
 }
 
-footer span {}
+footer span {
+  font-weight: 100;
+  color: #fff;
+  font-size: 1.5vh;
+  letter-spacing: 0.05em;
+  z-index: 999;
+  padding: 1.8vw;
+  position: inherit;
+  left: 47%;
+}
 
 /*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
@@ -402,4 +438,12 @@ html.has-scroll-dragging {
 [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
   right: auto;
   bottom: 0;
+}
+
+.fa {
+  text-decoration: none;
+  font-size: 1.8em !important;
+  opacity: 1 !important;
+  z-index: 999;
+  padding: 1.5vw;
 }
