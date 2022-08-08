@@ -234,33 +234,46 @@ html {
 }
 
 .contact {
-
-  flex-direction: column;
-color: #FFFFFF;
-
+  color: #FFFFFF;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.contact-top {
-  height: 40%;
-  padding: 3%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+.contact-left {
   font-family: 'DM Sans', sans-serif;
-  text-align: justify;
+  text-align: left;
   font-size: 4.5vh;
-  line-height: 8.5vh;
-  letter-spacing: 0.05em;
+  line-height: 8vh;
+  letter-spacing: 0.03em;
   text-transform: none;
   color: #EFE7D8;
+  width: 45%;
+  left: 1.3%;
+  padding: 2%;
 }
 
-.contact-bottom {
-  font-size: 3vh;
-  height: 50%;
-  display: flex;
+.contact-left div {
+  font-size: 2vh;
+  line-height: 3vh;
+  letter-spacing: 0.02em;
+  text-align: justify;
+  padding: 1%;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  width: 20%;
+  /*border: 1px solid #EFE7D8;*/
+  right: 10%;
+  top: 50%;
+}
+
+.contact-right {
+  font-size: 3vh;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
 }
 
 .title {
@@ -300,7 +313,7 @@ header {
 }
 
 header {
-  position: fixed; 
+  position: fixed;
 }
 
 .logo {
@@ -337,7 +350,6 @@ header {
 footer {
   bottom: 0%;
   position: absolute;
-
 }
 
 footer span {
@@ -345,10 +357,9 @@ footer span {
   color: #fff;
   font-size: 1.5vh;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
   z-index: 999;
   padding: 1.8vw;
-  position: inherit;
-  left: 47%;
 }
 
 /*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
