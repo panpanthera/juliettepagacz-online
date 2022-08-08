@@ -164,6 +164,7 @@ html {
 
 .portfolio {
   flex-direction: column;
+  z-index: 998;
 }
 
 .top-two {
@@ -319,6 +320,15 @@ header {
 
 header {
   position: fixed;
+  z-index: 997;
+}
+
+#hideScrollBar {
+  position: fixed;
+  height: 100%;
+  width: 1%;
+  right: 0%;
+  background-color: #1F1F1F;
 }
 
 .logo {
