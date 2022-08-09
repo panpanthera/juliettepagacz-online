@@ -116,7 +116,9 @@ html {
 }
 
 .barre {
-  position: sticky;
+  position: absolute;
+  left: 42.5vw;
+  right: 7.6vw;
   border: 0.1vh solid #FFFFFF;
   top: 42vh;
 }
