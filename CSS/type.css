@@ -50,6 +50,7 @@ a {
     text-decoration: underline;
     color: #F5F4F0;
     transition: #3d54fe 0.5s ease-out;
+    cursor: none;
 }
 
 a:hover {

@@ -1,42 +1,42 @@
 /*import LocomotiveScroll from 'locomotive-scroll';*/
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
-const locoScroll = new LocomotiveScroll({
-    el: document.querySelector("[data-scroll-container]"),
-    smooth: true,
-    tablet: {
-      smooth: true
-    },
-    smartphone: {
-      smooth: true
-    },
-    repeat: true,
-  });
-  
-  locoScroll.on("scroll", ScrollTrigger.update);
-  
-  ScrollTrigger.scrollerProxy("[data-scroll-container]", {
-    scrollTop(value) {
-      return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-    }, // we don't have to define a scrollLeft because we're only scrolling vertically.
-    getBoundingClientRect() {
-      return {
-        top: 0,
-        left: 0,
-        width: window.innerWidth,
-        height: window.innerHeight
-      };
-    },
-    pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
-  });
 
-// pinning the sections
+/* Main navigation */
 
-// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+document.querySelectorAll(".anchor").forEach(anchor => {
+	anchor.addEventListener("click", function(e) {
+		e.preventDefault();
+		let targetElem = document.querySelector(e.target.getAttribute("href")),
+			y = targetElem;
+		gsap.to(window, {
+			scrollTo: {
+				y: y,
+				autoKill: false
+			},
+			duration: 1,
+		});
+	});
+});
 
-// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-ScrollTrigger.refresh();
+/* Panels 
+const panels = gsap.utils.toArray(".panels-container .panel");
+tween = gsap.to(panels, {
+	xPercent: -100 * ( panels.length - 1 ),
+	ease: "none",
+	scrollTrigger: {
+		trigger: "#panels-container",
+		pin: true,
+		start: "top top",
+		scrub: 1,
+		snap: {
+			snapTo: 1 / (panels.length - 1),
+			inertia: false,
+			duration: {min: 0.1, max: 0.1}
+		},
+		end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
+	}
+});*/
 
 
 console.log('ya');
