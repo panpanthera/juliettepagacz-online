@@ -12,30 +12,28 @@ General Styles
 }
 
 html {
-  background-color: #1F1F1F;
-  scroll-snap-type: x mandatory;
+  background-color: #1F1F1F;s
   cursor: none;
 }
 
 body {
   overflow-x: hidden;
-  overflow-y: scroll;
+  width: 100vw;
+  cursor: none;
 }
 
 
 /* * * * * * * * * * * * * * * * * * *\
 \*  ********** ALL PAGES **********  */
 
-.page {
+section {
   height: 100vh;
   width: 100%;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'DM Sans';
   padding: 5%;
-  overflow: hidden;
 }
 
 /* * * * * * * * * * * * * * * * * *\
@@ -177,7 +175,6 @@ margin: 0 1% 0 0;
 \*  ********** PAGE TWO & THREE *********  */
 
 .portfolio {
-  width: 100vw;
   flex-direction: column;
 }
 
@@ -199,9 +196,10 @@ margin: 0 1% 0 0;
   color: #FFFFFF;
 }
 
-.mid-two {
-  height: 65%;
-  width: 90vw;
+.midTwo {
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -215,6 +213,7 @@ margin: 0 1% 0 0;
 }
 
 .linkCover {
+  height: 100%;
   margin: 2%;
   height: fit-content;
   z-index: 5;

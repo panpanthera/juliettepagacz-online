@@ -19,24 +19,37 @@ document.querySelectorAll(".anchor").forEach(anchor => {
 	});
 });
 
-/* Panels 
-const panels = gsap.utils.toArray(".panels-container .panel");
-tween = gsap.to(panels, {
-	xPercent: -100 * ( panels.length - 1 ),
-	ease: "none",
-	scrollTrigger: {
-		trigger: "#panels-container",
-		pin: true,
-		start: "top top",
-		scrub: 1,
-		snap: {
-			snapTo: 1 / (panels.length - 1),
-			inertia: false,
-			duration: {min: 0.1, max: 0.1}
+
+// Section Pinning
+gsap.utils.toArray("section").forEach((section) => {
+	// Check if section has horizontal scrolling
+	if (section.classList.contains("portfolio")) {
+	  const cards = section.querySelector(".midTwo");
+	  const card = section.querySelector(".linkCover");
+  
+	  gsap.to(cards, {
+		x: () => {
+		  return -( cards.scrollWidth - 1.5*card.offsetWidth);
 		},
-		end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
+		ease: "none",
+		scrollTrigger: {
+		  trigger: section,
+		  start: () => "center center",
+		  end: () => "+=" + (cards.scrollWidth - card.offsetWidth),
+		  scrub: true,
+		  pin: true,
+		  invalidateOnRefresh: true,
+		  anticipatePin: 1
+		}
+	  });
+	  // Use standard vertical scroll pinning
+	} else {
+	  ScrollTrigger.create({
+		markers: true,
+		trigger: section,
+		start: () => "top top",
+		pin: true,
+		anticipatePin: 1
+	  });
 	}
-});*/
-
-
-console.log('ya');
+  });
