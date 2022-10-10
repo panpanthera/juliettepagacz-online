@@ -40,9 +40,9 @@ section {
 \*  ********** PAGE ONE *********  */
 
 .left {
-width: 36%;
+width: 41%;
 height: 100%;
-text-transform: uppercase;
+
 padding: 2%;
 margin: 0 1% 0 0;
 }
@@ -51,18 +51,28 @@ margin: 0 1% 0 0;
   /*Creative mind? */
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
+  font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 66px;
+line-height: 86px;
+
+/* identical to box height */
+letter-spacing: 0.05em;
+
+color: #FFFFFF;/*
   font-weight: 400;
   font-size: 10.5vh;
   line-height: 13.5vh;
   letter-spacing: 0.1em;
-  color: #FFFFFF;
+  color: #FFFFFF;*/
   display: flex;
-  height: 46%;
+  height: 25%;
 }
 
 .mid {
   display: flex;
-  height: 41.5%;
+  height: 50%;
   justify-content: flex-end;
   align-items: center;
   font-family: 'DM Sans', sans-serif;
@@ -72,20 +82,20 @@ margin: 0 1% 0 0;
   line-height: 13.5vh;
   text-align: right;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: #EFE7D8;
+  background: url(../IMAGES/logo3White.svg) no-repeat center;
 }
 
 .left-mid {
   position: absolute;
-  top: 45%;
+  top: 46%;
   left: 6.5%;
 }
 
 
 .bottom {
   /* Living in Brussels. */
-  height: 5%;
+  height: 25%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -94,8 +104,7 @@ margin: 0 1% 0 0;
   font-weight: 400;
   font-size: 1.9vh;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #EFE7D8;
+  color: #FFFFFF;;
   padding: 2%;
 }
 
@@ -119,7 +128,7 @@ margin: 0 1% 0 0;
 
 .right .top {
   /* *Code. *Stories. */
-  height: 30%;
+  height: 25%;
   display: flex;
   justify-content: flex-end;
   font-family: 'Maghfirea';
@@ -146,14 +155,20 @@ margin: 0 1% 0 0;
   left: 42.5vw;
   right: 7.6vw;
   border: 0.1vh solid #FFFFFF;
-  top: 42vh;
+  top: 50vh;
+}
+
+.right .mid{
+  background: none;
+  height: 32%;
 }
 
 .right .bottom {
   /* I'm a junior web developer... */
-  height: 73.5%;
+  height: 55%;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   font-family: 'DM Sans', sans-serif;
   text-align: justify;
   font-size: 4.5vh;
@@ -161,7 +176,7 @@ margin: 0 1% 0 0;
   letter-spacing: 0.05em;
   text-transform: none;
   color: #EFE7D8;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .scroller {

@@ -20,7 +20,7 @@ document.querySelectorAll(".anchor").forEach(anchor => {
 });
 
 
-// Section Pinning
+/* Section Pinning
 gsap.utils.toArray("section").forEach((section) => {
 	// Check if section has horizontal scrolling
 	if (section.classList.contains("portfolio")) {
@@ -52,4 +52,4 @@ gsap.utils.toArray("section").forEach((section) => {
 		anticipatePin: 1
 	  });
 	}
-  });
+  });*/
