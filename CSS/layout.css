@@ -662,79 +662,53 @@ display: none;
 .contact {
   color: #FFFFFF;
   display: flex;
-  position: relative;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .contact-left {
+  bottom: 7%;
+  position: inherit;
   font-family: 'DM Sans', sans-serif;
   text-align: justify;
-  font-size: 4.5vh;
-  line-height: 7vh;
-  letter-spacing: 0.03em;
+  font-size: 2vh;
+  line-height: 3.5vh;
+  letter-spacing: 0.05em;
   color: #fff;
-  width: 55%;
-  left: 1.3%;
-  padding: 2%;
-}
-
-.contact-left>p {
-  padding: 2%;
+  width: 54%;
+  left: -1%;
 }
 
 .contact-left div {
-  font-size: 2vh;
-  line-height: 3vh;
-  letter-spacing: 0.02em;
-  text-align: justify;
+  font-size: 1.3vh;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+  text-align: left;
   padding: 1%;
-
-  position: absolute;
-  width: 20%;
+  width: 60%;
   /*border: 1px solid #EFE7D8;*/
-  right: 10%;
-  top: 50%;
-}
-
-.contact-right {
-  font-size: 3vh;
-  align-items: center;
-  justify-content: center;
-  padding: 2%;
+  left: 115%;
+  top: 95%;
+  color: #EFE7D8;
 }
 
 .smile {
   position: absolute;
-  right: 30vw;
-  top: 30vh;
+  transform: scale(0.5);
+  right: -6%;
+  top: 28%;
 }
 
-/*C U R S O R*/
-
-.cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  pointer-events: none;
+footer span a {
+  position: relative;
+  left: -17%;
+  padding-left: 20vw;
+  font-weight: 100;
+  color: #fff;
+  font-size: 1.3vh;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  z-index: 999;
 }
-
-.cursor--small {
-  width: 2px;
-  height: 2px;
-  left: -2.5px;
-  top: -2.5px;
-  border-radius: 50%;
-  z-index: 11000;
-  background: WHITE;
-}
-
-.cursor--canvas {
-  width: 100vw;
-  height: 100vh;
-  z-index: 12000;
-}
-
-
 
 }
