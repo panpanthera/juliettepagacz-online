@@ -482,7 +482,7 @@ footer span a {
 /* * * * * * * * * * * * * * * * * * * */
 /* * * * * * MOBILE VERSION * * * * * */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .left {
     width: 100vw;
     height: 90vh;
@@ -493,32 +493,36 @@ footer span a {
   .left .top {
     /*Creative mind? */
     position: relative;
-    left: 55%;
-    font-size: 2.5vh;
-    align-items:flex-end;
+    left: 56%;
+    top: 10%;
+    font-size: 2.7vh;
+    align-items: center;
     display: flex;
-    height: 20%;
+    height: 10%;
   }
   
   .mid {
     display: flex;
+    align-items: center;
     position: relative;
-    left: 42%;
-    height: 40%;
+    top: 10%;
+    left: 45%;
+    max-height: 40%;
     color: #EFE7D8;
     background: url(../IMAGES/logo3White.svg) no-repeat center;
-    transform: scale(0.8);
+    transform: scale(0.92);
   }
   
   .bottom {
     /* Living in Brussels. */
-    height: 20%;
+    min-height: 10%;
     position: relative;
     width: 100vw;
-    left: 21.5%;
+    left: 23%;
+    top: 12%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     font-weight: 400;
     font-size: 1.7vh;
   }
@@ -533,7 +537,7 @@ footer span a {
     position: relative;
     transform: rotate(-90deg);
     font-size: 3vh;
-    top: 26%;
+    top: 27.5%;
     right: -15%;
     height: 2%;
     width: 53%;
@@ -550,21 +554,17 @@ footer span a {
   
   .right .bottom {
     /* I'm a junior web developer... */
-    width: 86vw;
-    height: 30%;
-    padding: 2%;
-    display: flex;
-    font-family: 'DM Sans', sans-serif;
-    text-align: justify;
-    font-size: 1.8vh;
-    line-height: 3.6vh;
+    max-width: 92vw;
+    font-size: 1.9vh;
+    line-height: 3.7vh;
+    word-spacing: 0.05em;
     letter-spacing: 0.05em;
     text-transform: none;
-    color: #EFE7D8;
+    color: #fff;
     overflow: visible;
-    bottom: -69%;
+    top: 39.8%;
+    left: -56.5%;
     position: relative;
-    left: -61%;
   }
 
   .scroller {
@@ -584,11 +584,11 @@ header {
   position: relative;
   top: 10%;
   left: -10%;
-  transform: scale(0.5);
+  transform: scale(0.4);
 }
 
 .navBar {
-  width: 60%;
+  width: 72%;
 }
 
 .navBar .link {
@@ -597,13 +597,12 @@ font-size: 1.7vh;
 
 #writeme {
   position: fixed;
-  top: 64%;
-  right: 2%;
+  top: 59%;
+  right: 0.5%;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.5vh;
+  font-size: 1.7vh;
   letter-spacing: 0.05em;
-  
   z-index: 1000;
 }
 
