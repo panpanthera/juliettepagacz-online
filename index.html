@@ -20,7 +20,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <!-- SCRIPTS -->
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
@@ -105,10 +105,13 @@
             <span><a class="link" href="mailto:juliette.pagacz@gmail.com">write me</a></span>
         </div>
         <section class="panel" id="home" data-scroll-section>
-            <svg class="scroller bounce" width="16" height="32" viewBox="0 0 16 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.28805 31.7015C7.67587 32.0947 8.30902 32.0991 8.70223 31.7113L15.1099 25.3913C15.5031 25.0035 15.5075 24.3703 15.1196 23.9771C14.7318 23.5839 14.0987 23.5796 13.7055 23.9674L8.00976 29.5851L2.39203 23.8894C2.0042 23.4962 1.37105 23.4918 0.977848 23.8797C0.584641 24.2675 0.580277 24.9006 0.9681 25.2938L7.28805 31.7015ZM7.20681 0.993107L7.00003 30.9924L8.99999 31.0062L9.20676 1.00689L7.20681 0.993107Z" fill="white"/>
-                </svg>
-        
+            <svg class="scroller bounce" width="16" height="32" viewBox="0 0 16 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.28805 31.7015C7.67587 32.0947 8.30902 32.0991 8.70223 31.7113L15.1099 25.3913C15.5031 25.0035 15.5075 24.3703 15.1196 23.9771C14.7318 23.5839 14.0987 23.5796 13.7055 23.9674L8.00976 29.5851L2.39203 23.8894C2.0042 23.4962 1.37105 23.4918 0.977848 23.8797C0.584641 24.2675 0.580277 24.9006 0.9681 25.2938L7.28805 31.7015ZM7.20681 0.993107L7.00003 30.9924L8.99999 31.0062L9.20676 1.00689L7.20681 0.993107Z"
+                    fill="white" />
+            </svg>
+
             <div class="left">
                 <div class="top">
                     <p>Creative mind,</p>
@@ -130,54 +133,66 @@
                 </div>
                 <div class="bottom">
 
-                    <h2 data-scroll data-scroll-speed="0" class="title"><span>I’m a junior web developer focusing on
-                            visuals & smooth designs, always keeping the user’s needs in mind.</span></h2>
+                    <h2 data-scroll data-scroll-speed="0" class="title"><span>Junior developer | interested in UX |
+                            focusing on smooth designs, always keeping the user’s needs in mind.</span></h2>
                 </div>
         </section>
 
         <section class="panel panels portfolio" id="websites">
-            <div class="top-two">
-                <!--<h3 class="guideline"><span>/ portfolio</span> </h3>-->
+            <div class="slider-wrap">
+                <div class="midTwo" id="slider-main">
+                    <div class="item linkCover link">
+                        <img width="650px" src="./IMAGES/homepage.png" />
+                        <div class="comments">
+                            <span>tools: html, css, javascript <br>framework: gsap, jquery</span>
+                            <span><a href="https://github.com/panpanthera/juliettepagacz-online"
+                                    target="_blank">Github</a></span>
+                            <span>DOB: 2022/08/08</span>
+                        </div>
+                    </div>
+                    <div class="item linkCover link">
+                        <a href="https://www.behance.net/gallery/108699601/KALANOA" target="_blank"><img width="650px"
+                                src="./IMAGES/Categories.png" /></a>
+                        <div class="comments">
+                            <span>tools: figma</span>
+                            <span><a href="https://www.behance.net/gallery/108699601/KALANOA"
+                                    target="_blank">behance</a></span>
+                            <span>DOB: 2020</span>
+                        </div>
+                    </div>
+                    <div class="item linkCover link">
+                        <img width="650px" cover="" src="./IMAGES/coming soon.svg" />
+                        <div class="comments">
+                            <span>tools: ?</span>
+                            <span>Github</span>
+                            <span>DOB: ?</span>
+                        </div>
+                    </div>
+                    <div class="item linkCover link">
+                        <img width="650px" cover="" src="./IMAGES/coming soon.svg" />
+                        <div class="comments">
+                            <span>tools: ?</span>
+                            <span>Github</span>
+                            <span>DOB: ?</span>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button type="button" class="slider-btn link">
+                            <i class="fa fa-caret-left" aria-hidden="true" onclick="prev()"></i>
+                        </button>
+                        <button type="button" class="slider-btn link">
+                            <i class="fa fa-caret-right" aria-hidden="true" onclick="next()"></i></button>
+                    </div>
+                </div>
             </div>
-            <div class="midTwo">
-                <div class="linkCover link">
-                    <img width="650px" src="./IMAGES/homepage.png" />
-                    <div class="comments">
-                        <span>tools: html, css, javascript <br>framework: gsap, jquery</span>
-                        <span><a href="https://github.com/panpanthera/juliettepagacz-online"
-                                target="_blank">Github</a></span>
-                        <span>DOB: 2022/08/08</span>
-                    </div>
-                </div>
-                <div class="linkCover link">
-                    <a href="https://www.behance.net/gallery/108699601/KALANOA" target="_blank"><img width="650px"
-                            src="./IMAGES/Categories.png" /></a>
-                    <div class="comments">
-                        <span>tools: figma</span>
-                        <span><a href="https://www.behance.net/gallery/108699601/KALANOA"
-                                target="_blank">behance</a></span>
-                        <span>DOB: 2020</span>
-                    </div>
-                </div>
-                <div class="linkCover">
-                    <img width="650px" cover="" src="./IMAGES/coming soon.svg" />
-                    <div class="comments">
-                        <span>tools: ?</span>
-                        <span>Github</span>
-                        <span>DOB: ?</span>
-                    </div>
-                </div>
-            </div>
-            <!--<div class="bottom-two">
-                <img width="1735px" src="./IMAGES/Arrow 2.png">
-            </div>-->
+
         </section>
 
         <section class="panel contact" id="contact" data-scroll-section data-scroll-direction="">
             <div class="contact-left">
                 <p>Hello there, I’m <a class="link" target="_blank"
                         href="https://www.canva.com/design/DAESR7spGNY/QIMD8Mq08AzjOO7p_zZ0QA/view">Juliette
-                        Pagacz</a>, a passionate ICT teacher and junior UX/UI designer.<br></p>
+                        Pagacz</a>, a passionate ICT teacher and developer.<br></p>
                 <p><br>After graduating from a Bachelor's in Visual Arts, I was drawn to programming and studied at the
                     <a class="link" target="_blank" href="https://42.fr/en/homepage/">School 19</a> (part of the 42
                     international

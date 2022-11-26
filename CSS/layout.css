@@ -608,7 +608,7 @@ font-size: 1.7vh;
 
 #writeme a {
   text-decoration: none;
-  color: #F24738;
+  color: #EFE7D8;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * *\
@@ -711,4 +711,40 @@ footer span a {
   z-index: 999;
 }
 
+}
+
+.slider-wrap {
+  position: relative;
+  
+}
+
+.slider-main {
+  position: absolute;
+}
+
+.item {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.btn-area {
+  position: absolute;
+  left: 50%;
+  top: 95%;
+}
+
+.slider-btn {
+  border: none;
+  outline: none;
+  font-size: 25px;
+  background-color: #1F1F1F;
+  color: #EFE7D8;
+  cursor: none;
 }
